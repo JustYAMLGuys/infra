@@ -8,7 +8,7 @@ resource "aws_security_group" "headscale_sg" {
     from_port   = 8080
     to_port     = 8080
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]  # Replace with your desired source IP range
+    cidr_blocks = ["0.0.0.0/0"] # Replace with your desired source IP range
   }
 
 
@@ -16,7 +16,7 @@ resource "aws_security_group" "headscale_sg" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]  # Replace with your desired source IP range for SSH access
+    cidr_blocks = ["0.0.0.0/0"] # Replace with your desired source IP range for SSH access
   }
 
   egress {
