@@ -1,4 +1,12 @@
 terraform {
+
+  backend "s3" {
+    bucket         = "terraform-state-jyg"
+    key            = "aws/terraform.tfstate"
+    region         = "eu-central-1"
+    dynamodb_table = "terraform-state-lock-jyg"
+  }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -12,3 +20,5 @@ terraform {
 provider "aws" {
   region = var.region
 }
+
+
