@@ -24,7 +24,7 @@ fi
 # Clone the repository
 echo "Cloning the repository..."
 git clone https://github.com/JustYAMLguys/utility.git /tmp/app
-cd /tmp/app/utility/ssh-key-from-gh/app || exit 1
+cd /tmp/app/pubkey-from-github/ || exit 1
 
 # Build and run the Go program
 echo "Building and running the program..."
@@ -32,7 +32,6 @@ sudo -u ubuntu /usr/local/go/bin/go run main.go
 
 # Cleanup: Remove the cloned repository
 echo "Cleaning up..."
-cd ../..
 rm -rf /tmp/app
 
-echo "Script completed successfully."
+echo "Script completed successfully."s
