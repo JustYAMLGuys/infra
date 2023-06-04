@@ -10,5 +10,12 @@ repos:
       - --hook-config=--path-to-file=README.md        # Valid UNIX path. I.e. ../TFDOC.md or docs/README.md etc.
       - --hook-config=--add-to-existing-file=true     # Boolean. true or false
       - --hook-config=--create-file-if-not-exist=true # Boolean. true or false
-  - id: terraform_tfsec
-  
+  #- id: terraform_tfsec
+
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.1.0
+  hooks:
+  - id: trailing-whitespace
+  - id: end-of-file-fixer
+  - id: check-yaml
+  - id: check-added-large-files
