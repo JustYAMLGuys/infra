@@ -35,6 +35,7 @@
 | <a name="input_environment"></a> [environment](#input\_environment) | environment of the ec2 instance | `string` | n/a | yes |
 | <a name="input_instance_ami"></a> [instance\_ami](#input\_instance\_ami) | ami of the ec2 instance | `string` | n/a | yes |
 | <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | type of the ec2 instance | `string` | n/a | yes |
+| <a name="input_key_name"></a> [key\_name](#input\_key\_name) | key name of the ec2 instance | `string` | n/a | yes |
 | <a name="input_public_subnet_id"></a> [public\_subnet\_id](#input\_public\_subnet\_id) | subnet id of the ec2 instance | `string` | n/a | yes |
 | <a name="input_server_name"></a> [server\_name](#input\_server\_name) | name of the ec2 instance | `string` | n/a | yes |
 | <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | vpc id of the ec2 instance | `string` | n/a | yes |

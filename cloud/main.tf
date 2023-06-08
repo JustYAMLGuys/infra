@@ -13,6 +13,7 @@ module "headsccale-server" {
   source = "./aws/headscale-server"
 
   instance_ami     = var.instance_ami
+  key_name         = var.key_name
   server_name      = var.server_name
   environment      = var.environment
   instance_type    = var.instance_type

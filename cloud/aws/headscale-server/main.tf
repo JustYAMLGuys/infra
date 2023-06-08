@@ -6,7 +6,7 @@ module "ec2_instance" {
   ami                    = var.instance_ami
   instance_type          = var.instance_type
   monitoring             = false
-  key_name               = "aws-jyg"
+  key_name               = var.key_name
   vpc_security_group_ids = [aws_security_group.headscale_sg.id]
   subnet_id              = var.public_subnet_id
   user_data              = file("${path.module}/go-import-ssh-gh.sh")

@@ -27,3 +27,8 @@ variable "instance_ami" {
   type        = string
   description = "ami of the ec2 instance"
 }
+
+variable "key_name" {
+  type        = string
+  description = "key name of the ec2 instance"
+}
